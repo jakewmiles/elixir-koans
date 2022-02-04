@@ -42,7 +42,10 @@ defmodule Maps do
   end
 
   koan "Can merge maps" do
-    assert Map.merge(%{first_name: "Jon"}, %{last_name: "Snow"}) == %{first_name: "Jon", last_name: "Snow"}
+    assert Map.merge(%{first_name: "Jon"}, %{last_name: "Snow"}) == %{
+             first_name: "Jon",
+             last_name: "Snow"
+           }
   end
 
   koan "When merging, the last map wins" do
